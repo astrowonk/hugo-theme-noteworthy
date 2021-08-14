@@ -21,6 +21,10 @@
   {{ range .Site.Params.custom_css -}}
   <link rel="stylesheet" href="{{ . | absURL }}">
   {{- end }}
+
+  {{ range .Site.Params.custom_js -}}
+  <script type="text/javascript" src="{{ . | absURL }}"></script>
+  {{- end }}
   <!-- Uncomment to add custom styles -->
   <!-- Modify the custom.scss file inside assets > css to use scss -->
   <!-- {{ $custom_style := resources.Get "css/custom.scss" | toCSS | minify | fingerprint }} 
