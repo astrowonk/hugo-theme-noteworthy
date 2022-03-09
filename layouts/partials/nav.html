@@ -3,6 +3,8 @@
   {{ partial "header.html" . }}
   <div class="nav-menu">
     <a class="color-link nav-link" href="https://marcoshuerta.com">Web Site Home</a>
+    <a class="color-link nav-link" href="https://marcoshuerta.com">Blog Home</a>
+
     {{ range .Site.Menus.main }}
     <a class="color-link nav-link" href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
